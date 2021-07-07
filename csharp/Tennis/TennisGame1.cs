@@ -43,7 +43,7 @@ namespace Tennis
         public string GetScore()
         {
             string score = "";
-            var tempScore = 0;
+            
             if (m_score1 == m_score2)
             {
                 score = tie.ContainsKey(m_score1) ? tie[m_score1] : "Deuce";

@@ -13,3 +13,11 @@ Refactor the class "TennisGame1". You should use the language that's most famili
 1. Send us the link to your repo. Please make it private and give access to WayLit organization
 
 The test suite provided is fairly comprehensive, and fast to run. You should not need to change the tests, only run them often as you refactor.
+
+# What was done
+1. Removed hard coded player name values
+2. Added the tennis1 game rules as readonly dictionary
+3. Replaced the switch case logic with dictionary rules
+4. Got rid of unused variables
+
+Brief : All hardcoded values were cleaned and redundant logic was replaced with dictionaries :)

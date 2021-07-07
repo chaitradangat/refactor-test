@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Tennis
 {
     class TennisGame1 : ITennisGame
@@ -6,11 +8,28 @@ namespace Tennis
         private int m_score2 = 0;
         private string player1Name;
         private string player2Name;
+        private readonly Dictionary<int, string> tie;
+        private readonly Dictionary<int, string> notie;
 
         public TennisGame1(string player1Name, string player2Name)
         {
             this.player1Name = player1Name;
             this.player2Name = player2Name;
+
+            tie = new Dictionary<int, string>
+            {
+                {0,"Love-All"},
+                {1,"Fifteen-All" },
+                {2,"Thirty-All" }
+            };
+
+            notie = new Dictionary<int, string>
+            {
+                {0,"Love"},
+                {1,"Fifteen" },
+                {2,"Thirty" },
+                {3,"Forty" }
+            };
         }
 
         public void WonPoint(string playerName)
